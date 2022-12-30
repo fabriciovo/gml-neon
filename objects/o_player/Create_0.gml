@@ -2,7 +2,6 @@
 
 enum player_state {
 	normal,
-	jump,
 	dash,
 	hit,
 	dead
@@ -14,9 +13,10 @@ acceleration_ = 0.5
 max_speed_ = 1.5
 dir_ = image_xscale
 grav_ = 0.5
-
+grounded_ = true
 x_scale_ = 1
 y_scale_ = 1
+hit = false
 
 hp_ = 0
 max_hp_ = 10
@@ -29,8 +29,5 @@ dash_time_ = 12
 starting_state_ = player_state.normal;
 state_ = starting_state_;
 
-
-sprite_[player_state.normal] = s_player_idle;
-sprite_[player_state.jump] = s_player_idle;
-sprite_[player_state.hit] = s_player_idle;
-sprite_[player_state.dead] = s_player_idle;
+flash_alpha = 0
+flash_color = c_white
