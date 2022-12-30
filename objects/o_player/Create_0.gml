@@ -17,7 +17,7 @@ grounded_ = true
 x_scale_ = 1
 y_scale_ = 1
 hit = false
-
+can_shoot_ = true
 hp_ = 0
 max_hp_ = 10
 coin_ = 0

@@ -1,2 +1,2 @@
-other.hit = true
+//other.hit = true
 instance_destroy()
