@@ -6,7 +6,7 @@ enum player_state {
 	hit,
 	dead
 }
-
+image_speed = 0.1
 vsp_ = 0
 hsp_ = 0
 acceleration_ = 0.5
