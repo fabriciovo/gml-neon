@@ -20,7 +20,7 @@ if(_key_right || _key_left){
     if(hsp_ < -max_speed_) hsp_ = -max_speed_ 
 }else { 
 	sprite_index = s_player_idle
-	image_speed = 0.1
+	image_speed = 0.2
     //scr_apply_friction(acc)
 	hsp_ = 0
 }
