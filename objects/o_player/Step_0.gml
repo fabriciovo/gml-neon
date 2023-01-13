@@ -1,5 +1,3 @@
 /// @description Event User
-event_user(state_)
-
-y+= vsp_
-x+= hsp_
+get_input();
+script_execute(state)
