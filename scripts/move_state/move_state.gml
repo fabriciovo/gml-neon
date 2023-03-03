@@ -51,6 +51,8 @@ function move_state() {
 	    //audio_emitter_gain(audio_em, .2);
 	    //audio_play_sound_on(audio_em, snd_step, false, 6);
 	}
+	
+	if 
 
 	Collisions(o_solid);
 

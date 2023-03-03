@@ -1,12 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+target_ = o_player;
+width_ = camera_get_view_width(view_camera[0]);
+height_ = camera_get_view_height(view_camera[0]);
 
-cam_width = 640
-cam_height = 360
-
-
-follow = o_player
-
-x_to = x
-y_to = y
-
+scale_ = view_wport[0] / width_;
