@@ -33,10 +33,11 @@
     {"name":"s_solid","order":1,"path":"sprites/s_solid/s_solid.yy",},
     {"name":"o_enemy","order":3,"path":"objects/o_enemy/o_enemy.yy",},
     {"name":"apply_friction","order":3,"path":"scripts/apply_friction/apply_friction.yy",},
-    {"name":"move_state","order":1,"path":"scripts/move_state/move_state.yy",},
+    {"name":"free_state","order":1,"path":"scripts/free_state/free_state.yy",},
     {"name":"s_player_jump","order":4,"path":"sprites/s_player_jump/s_player_jump.yy",},
     {"name":"s_bullet","order":3,"path":"sprites/s_bullet/s_bullet.yy",},
     {"name":"Movement","order":3,"path":"scripts/Movement/Movement.yy",},
+    {"name":"dash_state","order":5,"path":"scripts/dash_state/dash_state.yy",},
     {"name":"o_game","order":5,"path":"objects/o_game/o_game.yy",},
   ],
 }

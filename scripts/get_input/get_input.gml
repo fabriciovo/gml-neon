@@ -5,7 +5,8 @@ function get_input() {
 	up = keyboard_check_pressed(vk_up);
 	up_release = keyboard_check_released(vk_up);
 	down = keyboard_check(vk_down);
-
+	action = keyboard_check_pressed(ord("Z"));
+	dash = keyboard_check_pressed(ord("X"));
 	// Override the controls for a gamepad
 	var gp_id = 0;
 	var thresh = .5;

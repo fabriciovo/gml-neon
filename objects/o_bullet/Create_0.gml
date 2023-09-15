@@ -1,1 +1,1 @@
-hspeed = 0
+hspeed = o_player.image_xscale * 6

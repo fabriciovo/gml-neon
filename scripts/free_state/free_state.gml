@@ -1,5 +1,16 @@
 /// @description move_state()
-function move_state() {
+function free_state() {
+	if dash and can_dash {
+		can_dash = false
+		dash_direction = point_direction(0,0,right-left,down-up)
+		dash_spd = dash_distance / dash_time
+		dash_energy = dash_distance
+		state = dash_state
+	}
+	if action {
+		instance_create_layer(x,y,"Instances",o_bullet)
+	}
+	
 	if (!place_meeting(x, y+1, o_solid)) {
 	    vspd += grav;
     
@@ -52,7 +63,6 @@ function move_state() {
 	    //audio_play_sound_on(audio_em, snd_step, false, 6);
 	}
 	
-	if 
 
 	Collisions(o_solid);
 

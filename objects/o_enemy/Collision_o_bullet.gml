@@ -1,0 +1,1 @@
+state = ENEMY_STATES.DAMAGE

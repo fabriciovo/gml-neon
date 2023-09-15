@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "move_state",
+  "name": "free_state",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
