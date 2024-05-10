@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "apply_friction",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Player",
-    "path": "folders/Scripts/Player.yy",
+  "$GMScript":"",
+  "%Name":"apply_friction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"apply_friction",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
