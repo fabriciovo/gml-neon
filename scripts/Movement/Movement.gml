@@ -34,9 +34,9 @@ if(hsp_ != 0){
     image_xscale = sign(hsp_)
 }
 
-if _key_action && can_shoot_ {
+if _key_action && can_shoot {
 	image_index = 0
-	can_shoot_ = false
+	can_shoot = false
 	alarm[0] = 60
 	var _bullet = instance_create_depth(x,y,depth,o_bullet)
 	_bullet.hspeed = image_xscale * 4  

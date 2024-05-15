@@ -13,6 +13,8 @@ dash_distance = 96
 dash_direction = 0
 dash_spd = 0
 dash_energy = 10
+can_shoot = true
+invencible = false
 state = free_state
 
 

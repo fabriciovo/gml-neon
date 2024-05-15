@@ -1,2 +1,2 @@
 /// @description Shoot alarm
-can_shoot_ = true
+can_shoot = true

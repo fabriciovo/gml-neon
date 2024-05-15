@@ -1,7 +1,7 @@
 function Juice() {
 	flash_alpha = 0;
 	flash_color = c_white;
-	can_take_damage = true;
+	is_taking_damage = false;
 	
 	x_scale = 1;
 	y_scale = 1;
@@ -17,9 +17,6 @@ function Juice() {
 		
 		if flash_alpha > 0 {
 			flash_alpha -= 0.1;
-		}
-		if flash_alpha <= 0 {
-			can_take_damage = true;
 		}
 		
 	}
