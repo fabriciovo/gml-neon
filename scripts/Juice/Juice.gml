@@ -9,7 +9,7 @@ function Juice() {
 	x_scale_target = 1;
 	y_scale_target = 1;
 	
-	scaling_speed = .1;
+	scaling_speed = 0.1;
 		
 	juice_step_event = function(){
 		x_scale = lerp(x_scale, x_scale_target, scaling_speed);
@@ -37,7 +37,7 @@ function Juice() {
 		}
 	}
 	
-	apply_scaling_method = function(_x_scale, _y_scale,_x_scale_target, _y_scale_target) {
+	juice_apply_scaling_method = function(_x_scale, _y_scale,_x_scale_target, _y_scale_target) {
 		x_scale = _x_scale;
 		y_scale = _y_scale;
 	
@@ -46,7 +46,7 @@ function Juice() {
 	}
 
 
-	apply_flash_method = function(_f_color, _f_alpha) {
+	juice_apply_flash_method = function(_f_color, _f_alpha) {
 		flash_alpha = _f_alpha;
 		flash_color = _f_color;
 	}

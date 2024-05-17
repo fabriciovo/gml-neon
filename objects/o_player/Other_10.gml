@@ -1,11 +1,10 @@
-/// @description move_state()
-function free_state() {
-	if dash and can_dash {
+/// @description Free State
+if dash and can_dash {
 		can_dash = false
-		dash_direction = point_direction(0,0,right-left,down-up)
+		dash_direction = point_direction(0,0,hspd_dir,down-up)
 		dash_spd = dash_distance / dash_time
 		dash_energy = dash_distance
-		state = dash_state
+		state = PLAYER_STATES.DASH_STATE
 	}
 	if action {
 		instance_create_layer(x,y,"Instances",o_bullet)
@@ -20,27 +19,29 @@ function free_state() {
 	    image_index = (vspd > 0);
     
 	    // Control the jump height
-	    if (up_release && vspd < -3) {
+		if (up_release && vspd < -3) {
 	        vspd = -3;
 	    }
 	} else {
-	    vspd = 0;
-    
-	    // Jumping code
-	    if (up) {
-	        vspd = -6;
-	        //audio_play_sound(snd_jump, 5, false);
-	    }
-    
-	    // Player is on the ground
-	    if (hspd == 0) {
-	        sprite_index = s_player_idle;
-			 image_speed = .1;
-	    } else {
-	        sprite_index = s_player_walk;
-	        image_speed = .3;
-	    }
+
+		  
+		// Player is on the ground
+		if (hspd == 0) {
+		sprite_index = s_player_idle;
+			image_speed = .1;
+		} else {
+		sprite_index = s_player_walk;
+		image_speed = .3;
+		}
+
+		if (up) {
+		vspd = -6;
+		//audio_play_sound(snd_jump, 5, false);
+		}
+
 	}
+
+    
 
 	if (right || left) {
 	    hspd += (right-left)*acc;
@@ -63,7 +64,5 @@ function free_state() {
 	    //audio_play_sound_on(audio_em, snd_step, false, 6);
 	}
 	
+	
 
-	Collisions(o_solid);
-
-}

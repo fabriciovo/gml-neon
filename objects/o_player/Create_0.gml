@@ -1,12 +1,21 @@
 /// @description Player create
 get_input()
 Juice();
+
+enum PLAYER_STATES {
+	FREE_STATE,
+	DASH_STATE
+}
+
+initial_state = PLAYER_STATES.FREE_STATE
+state = initial_state
+
 spd = 3
 acc = .3
 hspd = 0
 vspd = 0
+hspd_dir = 0
 grav = 0.3
-dashing = false
 can_dash = true
 dash_time = 12
 dash_distance = 96
@@ -15,8 +24,3 @@ dash_spd = 0
 dash_energy = 10
 can_shoot = true
 invencible = false
-state = free_state
-
-
-flash_alpha = 0
-flash_color = c_white

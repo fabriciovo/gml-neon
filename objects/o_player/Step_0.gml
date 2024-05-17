@@ -1,4 +1,5 @@
 /// @description Event User
 get_input();
 juice_step_event();
-script_execute(state)
+event_user(state)
+Collisions(o_solid);

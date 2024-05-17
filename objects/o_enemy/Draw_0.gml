@@ -1,2 +1,1 @@
-draw_self()
-draw_text(x,y-15,string(state))
+juice_draw_event(x,y);
