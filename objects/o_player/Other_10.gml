@@ -1,4 +1,5 @@
 /// @description Free State
+	
 if dash and can_dash {
 		can_dash = false
 		dash_direction = point_direction(0,0,hspd_dir,down-up)
@@ -23,34 +24,23 @@ if dash and can_dash {
 	        vspd = -3;
 	    }
 	} else {
-
-		  
-		// Player is on the ground
-		if (hspd == 0) {
-		sprite_index = s_player_idle;
-			image_speed = .1;
-		} else {
-		sprite_index = s_player_walk;
-		image_speed = .3;
-		}
-
 		if (up) {
 		vspd = -6;
 		//audio_play_sound(snd_jump, 5, false);
 		}
 
 	}
-
-    
-
 	if (right || left) {
 	    hspd += (right-left)*acc;
 	    hspd_dir = right - left;
-    
+    	sprite_index = s_player_walk;
+		image_speed = .3;
 	    if (hspd > spd) hspd = spd;
 	    if (hspd < -spd) hspd = -spd;
 	} else {
 	    apply_friction(acc);
+		sprite_index = s_player_idle;
+		image_speed = .1;
 	}
 
 	if (hspd != 0) {
@@ -58,11 +48,20 @@ if dash and can_dash {
 	}
 
 	// Play the landing sound
-	if (place_meeting(x, y+vspd+1, o_solid) && vspd > 0) {
+	if (place_meeting(x, y+1, o_solid) && vspd > 0) {
 	    //audio_emitter_pitch(audio_em, random_range(.8, 1.2));
 	    //audio_emitter_gain(audio_em, .2);
 	    //audio_play_sound_on(audio_em, snd_step, false, 6);
 	}
 	
+	if (place_meeting(x, y+1, o_rolling)) {
+		other_hspd= -1
+	}else{
+		other_hspd = 0
+	}
+	
+	if (place_meeting(x+hspd, y, o_rolling)) {
+		hspd = 0
+	}
 	
 

@@ -1,6 +1,6 @@
 /// @description move(collision_object)
 /// @param collision_object
-function Collisions(argument0) {
+function collisions_with_solid(argument0) {
 	var collision_object = argument0;
 
 	// Horizontal Collisions
@@ -10,7 +10,7 @@ function Collisions(argument0) {
 	    }
 	    hspd = 0;
 	}
-	x += hspd;
+	x += hspd + other_hspd;
 
 	// Vertical Collisions
 	if (place_meeting(x, y+vspd, collision_object)) {
@@ -20,6 +20,5 @@ function Collisions(argument0) {
 	    vspd = 0;
 	}
 	y += vspd;
-
-
 }
+

@@ -20,4 +20,4 @@ hspd = spd
 vspd = 0
 hp = 3
 grav = .3
-
+other_hspd = 0

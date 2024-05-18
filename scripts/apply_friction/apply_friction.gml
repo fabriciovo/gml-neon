@@ -1,10 +1,9 @@
-/// @description apply_friction(amount)
-/// @param amount
-function apply_friction() {
-	var amount = argument[0];
+/// @description apply_friction(Acceleration)
+/// @param _acc
+function apply_friction(_acc) {
 	if (hspd != 0) {
-	    if (abs(hspd)-amount > 0) {
-	        hspd -= amount*image_xscale;
+	    if (abs(hspd)-_acc > 0) {
+	        hspd -= _acc*image_xscale;
 	    } else {
 	        hspd = 0;
 	    }

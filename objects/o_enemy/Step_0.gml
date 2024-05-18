@@ -27,12 +27,15 @@ if alarm[0] == -1 {
 	    image_xscale = sign(hspd);
 	}	
 
-	Collisions(o_solid);
+	
 	
 	if(!place_meeting(x+5,y+1,o_solid)){
 		hspd = -spd
 	}
 	
+
 	if(!place_meeting(x-5,y+1,o_solid)){
 		hspd = spd
 	}
+	
+	collisions_with_solid(o_solid);

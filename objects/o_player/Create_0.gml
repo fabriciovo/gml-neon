@@ -24,3 +24,4 @@ dash_spd = 0
 dash_energy = 10
 can_shoot = true
 invencible = false
+other_hspd = 0
