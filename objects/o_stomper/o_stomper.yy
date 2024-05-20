@@ -41,7 +41,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"s_stomper_smash",
     "path":"sprites/s_stomper_smash/s_stomper_smash.yy",

@@ -8,6 +8,7 @@ function collisions_with_solid(_collision_object) {
 	    }
 	    hspd = 0;
 	}
+	
 	x += hspd + other_hspd;
 
 	// Vertical Collisions
@@ -30,6 +31,4 @@ function collision_with_rolling() {
     } else {
         other_hspd = 0;
     }
-
-	
 }
