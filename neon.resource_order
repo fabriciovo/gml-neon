@@ -45,7 +45,8 @@
     {"name":"s_solid","order":1,"path":"sprites/s_solid/s_solid.yy",},
     {"name":"s_spike_one","order":3,"path":"sprites/s_spike_one/s_spike_one.yy",},
     {"name":"s_spike_platform","order":4,"path":"sprites/s_spike_platform/s_spike_platform.yy",},
-    {"name":"s_stomper_smash","order":1,"path":"sprites/s_stomper_smash/s_stomper_smash.yy",},
+    {"name":"s_stomper_idle","order":1,"path":"sprites/s_stomper_idle/s_stomper_idle.yy",},
+    {"name":"s_stomper_return","order":3,"path":"sprites/s_stomper_return/s_stomper_return.yy",},
     {"name":"s_stomper_wait","order":2,"path":"sprites/s_stomper_wait/s_stomper_wait.yy",},
   ],
 }

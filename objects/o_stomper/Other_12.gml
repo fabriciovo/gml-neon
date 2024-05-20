@@ -1,4 +1,6 @@
-/// @description RETURN TO IDLE
-if image_index == 0 {
-	state = STOMP_STATE.IDLE_STATE
+/// @description WAIT STATE
+image_speed = 0
+
+if alarm[0] == -1 {
+	alarm[0] = 120
 }

@@ -71,6 +71,7 @@
     {"id":{"name":"s_spike_one","path":"sprites/s_spike_one/s_spike_one.yy",},},
     {"id":{"name":"s_spike_platform","path":"sprites/s_spike_platform/s_spike_platform.yy",},},
     {"id":{"name":"s_stomper_idle","path":"sprites/s_stomper_idle/s_stomper_idle.yy",},},
+    {"id":{"name":"s_stomper_return","path":"sprites/s_stomper_return/s_stomper_return.yy",},},
     {"id":{"name":"s_stomper_smash","path":"sprites/s_stomper_smash/s_stomper_smash.yy",},},
     {"id":{"name":"s_stomper_wait","path":"sprites/s_stomper_wait/s_stomper_wait.yy",},},
     {"id":{"name":"Tile","path":"sprites/Tile/Tile.yy",},},

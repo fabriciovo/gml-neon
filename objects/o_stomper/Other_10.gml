@@ -1,6 +1,9 @@
 /// @description IDLE STATE
-image_speed = 0
+
 if distance_to_object(o_player) < 40 {
+	image_speed = 0.1
+	image_index = 0
 	state = STOMP_STATE.SMASH_STATE
+}else{
+	image_speed = 0
 }
-show_debug_message(string(distance_to_object(o_player)))
