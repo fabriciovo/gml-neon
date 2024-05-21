@@ -6,6 +6,15 @@ function collisions_with_solid(_collision_object) {
 	    while (!place_meeting(x+sign(hspd + other_hspd), y, _collision_object)) {
 	        x += sign(hspd);
 	    }
+	
+		//var _on_wall = place_meeting(x+hspd + other_hspd + 5, y, _collision_object) -  place_meeting(x+hspd + other_hspd - 5, y, _collision_object)
+		
+		//if(_on_wall and place_meeting(x, y+vspd, _collision_object)){
+		//	hspd = -sign(hspd) * 2;
+		//}else{
+		//	hspd = 0;
+		//}
+
 	    hspd = 0;
 	}
 	
