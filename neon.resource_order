@@ -51,6 +51,7 @@
     {"name":"s_player_jump_fall","order":7,"path":"sprites/s_player_jump_fall/s_player_jump_fall.yy",},
     {"name":"s_player_jump","order":4,"path":"sprites/s_player_jump/s_player_jump.yy",},
     {"name":"s_player_walk","order":5,"path":"sprites/s_player_walk/s_player_walk.yy",},
+    {"name":"s_player","order":8,"path":"sprites/s_player/s_player.yy",},
     {"name":"s_solid","order":1,"path":"sprites/s_solid/s_solid.yy",},
     {"name":"s_spike_one","order":3,"path":"sprites/s_spike_one/s_spike_one.yy",},
     {"name":"s_spike_platform","order":4,"path":"sprites/s_spike_platform/s_spike_platform.yy",},

@@ -78,6 +78,7 @@
     {"id":{"name":"s_player_jump_fall","path":"sprites/s_player_jump_fall/s_player_jump_fall.yy",},},
     {"id":{"name":"s_player_jump","path":"sprites/s_player_jump/s_player_jump.yy",},},
     {"id":{"name":"s_player_walk","path":"sprites/s_player_walk/s_player_walk.yy",},},
+    {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
     {"id":{"name":"s_solid","path":"sprites/s_solid/s_solid.yy",},},
     {"id":{"name":"s_spike_one","path":"sprites/s_spike_one/s_spike_one.yy",},},
     {"id":{"name":"s_spike_platform","path":"sprites/s_spike_platform/s_spike_platform.yy",},},

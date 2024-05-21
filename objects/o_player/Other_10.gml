@@ -10,13 +10,13 @@ if (dash && can_dash) {
 if (right || left) {
     hspd += (right - left) * acc;
     hspd_dir = right - left;
-    sprite_index = s_player_walk;
+    sprite_index = s_player;
     image_speed = 0.3;
     if (hspd > spd) hspd = spd;
     if (hspd < -spd) hspd = -spd;
 } else {
     apply_friction(acc);
-    sprite_index = s_player_idle;
+    sprite_index = s_player;
     image_speed = 0.1;
 }
 
@@ -28,7 +28,7 @@ if (!place_meeting(x, y + 1, o_solid)) {
     vspd += grav;
     
     // Player is in the air
-    sprite_index = s_player_jump;
+    sprite_index = s_player;
     image_speed = 0;
     image_index = (vspd > 0);
     
@@ -55,3 +55,6 @@ if (place_meeting(x, y + 1, o_solid) && vspd > 0) {
     //audio_emitter_gain(audio_em, 0.2);
     //audio_play_sound_on(audio_em, snd_step, false, 6);
 }
+
+
+
