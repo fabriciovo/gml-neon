@@ -10,7 +10,7 @@ enum PLAYER_STATES {
 initial_state = PLAYER_STATES.FREE_STATE
 state = initial_state
 
-spd = 3
+spd = 1.4
 acc = .3
 hspd = 0
 vspd = 0

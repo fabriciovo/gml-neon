@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"o_platform_1",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_platform_2",
+  "eventList":[],
   "managed":true,
-  "name":"o_platform_1",
+  "name":"o_platform_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Platforms",
     "path":"folders/Objects/Platforms.yy",
   },
   "parentObjectId":{
-    "name":"o_solid",
-    "path":"objects/o_solid/o_solid.yy",
+    "name":"o_platform_1",
+    "path":"objects/o_platform_1/o_platform_1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test",
-    "path":"sprites/test/test.yy",
+    "name":"platform_2",
+    "path":"sprites/platform_2/platform_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
