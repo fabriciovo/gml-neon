@@ -2,12 +2,11 @@
 /// @param collision_object
 function collisions_with_solid(_collision_object) {
 	// Horizontal Collisions
-	if (place_meeting(x + hspd + other_hspd, y, _collision_object)) {
-	    while (!place_meeting(x+sign(hspd + other_hspd), y, _collision_object)) {
+	if (place_meeting(x + hspd + other_hspd * (hspd_dir), y, _collision_object)) {
+	    while (!place_meeting(x+sign(hspd + other_hspd * sign(hspd_dir)), y, _collision_object)) {
 	        x += sign(hspd + other_hspd);
 	    }
-
-	    hspd = 0 + other_hspd;
+	    hspd = other_hspd;
 	}
 	
 	x += hspd + other_hspd;
